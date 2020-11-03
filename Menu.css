@@ -349,7 +349,7 @@ main{
         position: relative;
         background-color: #101010f6;;
         width: 100%;
-        margin-top: -200%;
+        margin-left: -100%;
         transition: all 0.5s;
         text-align: center;
         /* top:80px;
