@@ -1,0 +1,42 @@
+.blog{
+    width: 90%;
+    
+    margin: 0 auto;
+}
+.container-blog{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container-blog article{
+    margin: 20px 0;
+    width: 380px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+.container-blog article p{
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.container-blog h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+}
+.container-blog article img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+.container-blog article button{
+    margin: 10px 50px 10px 100px;
+    padding: 10px 50px;
+    background: rgb(224, 52, 9);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}

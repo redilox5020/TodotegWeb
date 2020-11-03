@@ -1,0 +1,100 @@
+/* Contenedor del Articulo */
+.container-article{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+article{
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: -10px 0 20px -30 black;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(224, 52, 9);
+
+}
+.container-article .h1-article,.h2-article{
+    margin-top: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+.container-article p{
+    margin-top: 20px;
+    color: #3c3c3c;
+}
+.container-article article img{
+    max-width: 500px;
+    max-height: 800px;
+    width: 100%;
+    display: block;
+    /* padding: 20px; */
+    /* height: 800px; */
+    margin: 0 auto;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* aside-Barra lateral */
+.container-aside aside{
+    /* margin-top: 0; */
+    margin-left: 40px;
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: #f7f7f7;
+    
+}
+.container-aside aside img{
+    width: 100%;
+}
+.container-aside aside h2, 
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: rgb(224, 52, 9);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:1334px){
+    .container-article article .h1-article, .h2-article{
+        padding: 20px;
+    }
+    .container-article article{
+        width: 100%;
+        padding: 1px;
+    }
+    .container-aside aside{
+        margin-top: 60px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

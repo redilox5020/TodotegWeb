@@ -1,0 +1,182 @@
+.contacto{
+    width: 90%;
+    /* padding-top: 150px; */
+    margin: 20px auto;
+    
+    text-align: center;
+    font-family: 'yanone kaffeesatz', sans-serif;
+}
+.contacto>h1{
+    font-size: 45px;
+}
+.contacto>p{
+    font-family: 'oswald', sans-serif;
+    font-size: 27px;
+}
+/* formulario */
+:focus{
+    outline: none;
+}
+.form-wrap{
+    width: 60%;
+    /* height: 530px; */
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, .2); */
+    font-family: 'oswald', sans-serif;
+}
+/* informacion de contacto */
+.contact-info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c00000;
+    opacity: 0.7;
+
+}
+.contact-info{
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: url(https://img.freepik.com/foto-gratis/gente-negocios-dandose-mano_53876-20488.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.info-title,
+.info-items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.info-title{
+    margin-bottom: 60px;
+}
+.info-title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.info-title h2{
+    font-size: 35px;
+    text-align: center;
+}
+.info-items p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.info-items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+/* formulario de contacto */
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+    /* display: flex;
+    flex-direction: column; */
+}
+form.form_contact h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+form.form_contact .form_user{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    /* width: 100%; */
+    padding: 8px 0 5px;
+    margin-bottom: 20px;
+    background: #f2f2f2;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 400;
+}
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    height: 120px;
+    max-height: 200px;
+    /* padding: 20px; */
+}
+form.form_contact input[type="Submit"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #c00000;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    align-self: flex-end;
+    cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+    
+}
+form.form_contact input[type="Submit"]:hover{
+    background: #5A5A5A;
+}
+
+@media (max-width:1065px){
+    .contacto{
+        padding-top: 100px;
+    }
+    form.form_contact input{
+        width: 100%;
+    }
+}
+@media (max-width:620px){
+    .form-wrap{
+        width: 90%;
+    }
+    .contact-info{
+        width: 100%;
+        padding: 20px 0;
+    }
+    form.form_contact{
+        width: 100%;
+    }
+}
+body div a input[type="button"]{
+    margin: 50px 0 0 50px ;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #c00000;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'yanone kaffeesatz';
+	font-size: 24px;
+	font-weight: 600;
+}
