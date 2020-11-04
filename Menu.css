@@ -23,7 +23,7 @@ header{
     background-image: linear-gradient(to bottom,
     hsl(0deg 0% 0% / 77%),
     hsl(0deg 0% 0% / 76%)
-    ), url(https://i.pinimg.com/originals/5a/1f/6f/5a1f6f90961e58f24cf6e2d7fab5bc84.jpg);
+    );
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -414,7 +414,7 @@ main{
         background-image: linear-gradient(to bottom,
         hsl(0deg 0% 0% / 77%),
         hsl(0deg 0% 0% / 76%)
-        ), url(https://papers.co/wallpaper/papers.co-bc59-hero-overwatch-diva-anime-art-illustration-game-flare-34-iphone6-plus-wallpaper.jpg);
+        );
         background-size: cover;
         /* background-position: 0 -70px; */
     }
@@ -450,7 +450,7 @@ main{
         background-image: linear-gradient(to bottom,
         hsl(0deg 0% 0% / 77%),
         hsl(0deg 0% 0% / 76%)
-        ), url(Img/Portada-Celular.jpg);
+        );
         background-size: cover;
         /* background-position: 0 -70px; */
     }
