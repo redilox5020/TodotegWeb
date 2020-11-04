@@ -437,6 +437,16 @@ main{
     } */
 }
 @media (max-width: 440px){
+    .intro{
+        width: 100%;
+        /* height: 800px; */
+        background-image: linear-gradient(to bottom,
+        hsl(0deg 0% 0% / 77%),
+        hsl(0deg 0% 0% / 76%)
+        ), url(Img/Portada-Celular.jpg);
+        background-size: cover;
+        /* background-position: 0 -70px; */
+    }
     .logo img{
         height: 70px;
     }
