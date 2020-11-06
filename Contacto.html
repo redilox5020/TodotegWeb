@@ -113,20 +113,20 @@
             </section>
         </section>
 
-        <form action="enviar.php" class="form_contact">
+        <form action="enviar.php" method="POST" class="form_contact">
             <h2>Envia tu Consulta</h2>
             <div class="form_user">
                 
-                <input type="text" id="names" placeholder="Nombre *" required>
+                <input type="text" id="names" placeholder="Nombre *" name="nombre" required>
 
                 
-                <input type="tel" id="telefono" placeholder="Telefono/Celular">
+                <input type="tel" id="telefono" placeholder="Telefono/Celular" name="telefono">
 
                 
-                <input type="email" id="Email" placeholder="Correo Electronico *" required>
+                <input type="email" id="Email" placeholder="Correo Electronico *" name="correo" required>
 
                 
-                <textarea id="Mensaje" placeholder="Consulta*" required></textarea>
+                <textarea id="Mensaje" placeholder="Consulta*" name="mensaje" required></textarea>
 
                 <input type="submit" id="btn-send">
             </div>
