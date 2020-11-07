@@ -907,6 +907,57 @@ footer{
         ), url(https://i.pinimg.com/originals/00/c9/56/00c956aaa7b629d9b9fec56d35e27d44.jpg);
     }
 }
+
+/* Buscador */
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 6.3%;
+    bottom: 0;
+    transform: translate(0%,-130%);
+    background: rgb(224, 52, 9);
+    padding: 0 10px;
+  
+    border-radius: 40px;
+  }
+  .buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    line-height: 50px;
+    transition: .3s;
+    width: 0;
+  }
+  .boton{
+  
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+  }
+  .buscar_texto:hover{
+    margin-left: 20px;
+  }
+  .buscar_texto::placeholder{
+  
+    color:#f1eaea;
+  }
+  /* Responsive */
+  @media screen and (min-width:480px){
+    .buscar:hover> .buscar_texto{
+      width: 190px;
+    }
+  }
+  @media screen and (min-width:768px){
+    .buscar:hover> .buscar_texto{
+      width: 300px;
+    }
+  }
+  
 /* Boton Arriba - Go Top */
 
 .go-top-container{
