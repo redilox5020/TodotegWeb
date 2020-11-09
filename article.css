@@ -73,7 +73,56 @@ article:before{
     margin-top: 20px;
     padding: 0 20px;
 }
-.container-aside aside button{
+.container-aside aside>a>button{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: rgb(224, 52, 9);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+/* Publicaciones Relacionadas */
+.publicaciones-relacionadas>h2{
+    background: #aa0303;
+    font-family: 'oswald',sans-serif;
+    color: #fff;
+    transform: skewX(-10deg);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.publicaciones-relacionadas{
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.publicaciones-relacionadas aside{
+    /* margin-top: 0; */
+    margin-left: 40px;
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: #f7f7f7;
+    
+}
+.publicaciones-relacionadas aside img{
+    width: 100%;
+    height: 200px;
+}
+.publicaciones-relacionadas aside h2, 
+.publicaciones-relacionadas aside p{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.publicaciones-relacionadas>aside>button{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -88,6 +137,7 @@ article:before{
 /* Barra Separadora de Contenido */
 .barraSeparadora{
     border-radius: 4px;
+    transform: skewX(-15deg);
     font-family: 'oswald', sans-serif;
     background: rgba(0,0,0,1);
     background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(26,25,26,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
@@ -136,6 +186,7 @@ article:before{
 }
 .area-de-descargas a button:hover{
     background: #ff0000;
+    transform: scale(1.1);
 }
 .requisitos{
     margin-top: 20px;
@@ -169,6 +220,7 @@ article:before{
     margin-bottom: 10px;
 }
 .requisitos .barraSeparadora{
+    transform: skewX(0);
  border-radius: 0;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e03409+0,ef4832+50,f6290c+51,f02f17+71,e03409+100 */
 background: rgb(224,52,9); /* Old browsers */
@@ -186,16 +238,105 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e03409', end
     }
 }
 @media screen and (max-width:1334px){
+    .container-article{
+        width: 95%;
+    }
     .container-article article .h1-article, .h2-article{
         padding: 20px;
     }
     .container-article article{
         width: 100%;
-        padding: 1px;
+        padding: 10px;
     }
     .container-aside aside{
         margin-top: 60px;
         width: 100%;
         margin-left: 0;
     }
+}
+/* boton youtube */
+.contenedor-boton{
+    font-family: 'Bangers', cursive;
+    width: 80%;
+    /* height: 60px; */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 13px;
+    box-shadow: 0px 5px 10px #464646;
+    margin: auto;
+}
+.contenedor-boton_nombre-usuario span{
+    font-size: 20px;
+    text-shadow: 2px 2px 0px #000c1d;
+}
+.contenedor-boton_foto-perfil{
+    width: 60px;
+    margin-top: 4px;
+    
+}
+.contenedor-boton_foto-perfil a>img{
+    width: 90%;
+    /* height: 60px; */
+    border-radius: 10px;
+    /* height: 100%; */
+}
+.contenedor-boton_nombre-usuario a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+.Botones{
+    /* height: 40px;
+    background: rgb(255, 0, 0); */
+
+}
+.contenedor-subs:hover{
+    transform: scale(1.1);
+    /* margin-left: 6px; */
+}
+.contenedor-boton_Suscribete{
+    font-family: 'Bangers', cursive;
+    font-size: 15px;
+    margin-left: 12px;
+    overflow: hidden;
+    height: 28px;
+    padding: 0 8px;
+    margin-top: 7px;
+    color: #fff;
+    background: rgb(255, 0, 0);
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+}
+.contenedor-boton_Suscribete i{
+    font-size: 15px;
+}
+.contenedor-boton_Suscribete:hover{
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.N-Suscriptores{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 6px;
+    font-size: 15px;
+    background: #fff;
+    outline: none;
+    
 }
